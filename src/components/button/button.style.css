@@ -13,12 +13,12 @@
 .primary {
   @apply bg-grey-100 text-common-white;
   &:hover {
-    background-color: red;
+    background-color: yellow;
   }
 }
 .secondary {
-  background-color: blue;
+  background-color: purple;
 }
 .outlined {
-  border: 1px solid green;
+  border: 1px solid peru;
 }
