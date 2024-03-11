@@ -1,0 +1,24 @@
+.large{
+  height: 54px;
+  padding: 0 30px;
+}
+.medium{
+  height: 46px;
+  padding: 0 30px;
+}
+.small{
+  height: 40px;
+  padding: 0 24px;
+}
+.primary {
+  @apply bg-grey-100 text-common-white;
+  &:hover {
+    background-color: green;
+  }
+}
+.secondary {
+  background-color: green;
+}
+.outlined {
+  border: 1px solid blue;
+}
