@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./layout.style.css"
 
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
@@ -18,8 +19,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        header
-        <br></br>
+        <header>
+          <div>
+            <div>
+              <div>
+                <p>logo + homez</p>
+              </div>
+              <div>
+                <p>Home</p>
+                <p>Listings</p>
+                <p>Members</p>
+                <p>Blog</p>
+                <p>Pages</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>ícono + login/register</p>
+              </div>
+              <div>
+                <p>llamar al componente botón</p>
+              </div>
+              <div>
+                <p>símbolo</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        
         {children}</body>
     </html>
   );
