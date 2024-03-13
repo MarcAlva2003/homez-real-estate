@@ -26,6 +26,9 @@ const config: Config = {
         text2: '',
         text3: '',
         text4: '',
+      },
+      primary: {
+        salmon: '#EB6753'
       }
     },
     extend: {
