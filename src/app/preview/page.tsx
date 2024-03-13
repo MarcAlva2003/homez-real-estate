@@ -1,29 +1,42 @@
 import { Button } from '@/components/button/button.component'
-import { FaRegCircleUser } from "react-icons/fa6";
+import { PiArrowUpRightLight } from "react-icons/pi";
+
+
 
 export default function Page() {
   return (
     <>
-      <Button size="small" variant="outlined">
+      <Button size="medium" variant="rounded"  color='black' font='narrow'>
         <div className='flex items-center'>
-          <FaRegCircleUser className='mr-2 text-common-white'/>
-          <p>Button</p>
+          <p>Ad Property</p>
+          <PiArrowUpRightLight className='arrowUpRight'/>   
         </div>
       </Button>
-      <Button size="small" variant="primary">
-        <p>Button</p>
+        
+      <Button size="small-2" variant="solid" color='white' font='narrow'>
+        <div className='flex items-center'>
+          <p>For Sale</p>
+        </div>
       </Button>
-      <Button size="small" variant="secondary">
-        <p>Button</p>
-      </Button>
-      <Button size="small" variant="outlined">
-        <p>Button</p>
-      </Button>
-      <Button size="small" variant="outlined">
-        <p>Button</p>
-      </Button>
-      <Button size="small" variant="outlined">
-        <p>Button</p>
+          
+      <Button size="medium" variant="solid-rounded" color='white' font='broad'>
+        <div className='flex items-center'>
+          <p>Contact Us</p>
+          <PiArrowUpRightLight className='arrowUpRight'/>   
+        </div>
+      </Button>   
+
+      <Button size="small" variant="solid" color='black' font='narrow'>
+        <div className='flex items-center'>
+          <p>For Rent</p>
+        </div>
+      </Button> 
+
+      <Button size="large" variant="solid" color='salmon' font='broad'>
+        <div className='flex items-center'>
+          <p>See All Properties</p>  
+          <PiArrowUpRightLight className='arrowUpRight'/>   
+        </div> 
       </Button>
     </>
   )
