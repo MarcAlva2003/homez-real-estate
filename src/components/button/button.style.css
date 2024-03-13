@@ -6,27 +6,23 @@ body {
   height: 54px;
   padding: 0 36.5px;
   border-radius: 8px;
-   font-size: 19px;
 }
 
 .medium{
   height: 46px;
   padding: 0 32.5px;
-  font-size: 17.8px;
 }
 
 .small{
   height: 40px;
   padding: 0 17px;
   border-radius: 6px;
-  font-size: 50px;
 }
 
 .rounded {
   border-radius: 55px;
-  color: #ffffff;
   border: 1px;
-  border-color: #ffffff;
+  @apply border border-solid border-common-white text-common-white
 }
 
 .solid-rounded{
@@ -36,36 +32,27 @@ body {
 }
 
 .black {
-  background-color: #181A20;
+  @apply bg-common-black
 }
 
 .white {
-  background-color: #ffffff;
+  @apply bg-common-white
 }
 
 .salmon{
-  background-color: #EB6753;
+  @apply bg-primary-salmon
 }
 
 .solid {
   border: 1px;
-  color: #ffffff;
+  @apply text-common-white
 }
 
 .small-2{
   height: 40px;
   padding: 0 17px;
   border-radius: 6px;
-  color: #000000;
-  font-size: 35px;
-}
-
-.broad {
-  font:15px;
-}
-
-.narrow {
-  font: 14px;
+  @apply text-common-black
 }
 
 .arrowUpRight {
