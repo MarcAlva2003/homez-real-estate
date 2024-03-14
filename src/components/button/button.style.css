@@ -1,24 +1,63 @@
+body {
+  background-color: blue;
+} 
+
 .large{
   height: 54px;
-  padding: 0 30px;
+  padding: 0 36.5px;
+  border-radius: 8px;
 }
+
 .medium{
   height: 46px;
-  padding: 0 30px;
+  padding: 0 32.5px;
 }
+
 .small{
   height: 40px;
-  padding: 0 24px;
+  padding: 0 17px;
+  border-radius: 6px;
 }
-.primary {
-  @apply bg-grey-100 text-common-white;
-  &:hover {
-    background-color: green;
-  }
+
+.rounded {
+  border-radius: 55px;
+  border: 1px;
+  @apply border border-solid border-common-white text-common-white
 }
-.secondary {
-  background-color: green;
+
+.solid-rounded{
+  border-radius: 12px;
+  height: 54px;
+  padding: 0 34.5px;
 }
-.outlined {
-  border: 1px solid blue;
+
+.black {
+  @apply bg-common-black
+}
+
+.white {
+  @apply bg-common-white
+}
+
+.salmon{
+  @apply bg-primary-salmon
+}
+
+.solid {
+  border: 1px;
+  @apply text-common-white
+}
+
+.small-2{
+  height: 40px;
+  padding: 0 17px;
+  border-radius: 6px;
+  @apply text-common-black
+}
+
+.arrowUpRight {
+margin: 0;
+padding: 0;
+height: 15px;
+width: auto;
 }

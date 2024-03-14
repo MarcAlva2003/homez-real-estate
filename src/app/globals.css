@@ -41,11 +41,13 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
 input:not([type='range']) {
   -webkit-appearance: none;
   border: none;
   background: none;
 }
+
 input[type='checkbox'] {
   margin: 0;
   border: 0;
