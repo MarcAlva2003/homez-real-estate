@@ -1,18 +1,46 @@
 header{
     height: 87px;
-    justify-content: space-between;
-    flex-direction: row;
+    text-align: center;
     @apply bg-common-black text-common-white
-
 }
 
-/* .contendor-principal{
-    display: grid;
-    place-items: center;
-    margin: auto;
-} */
-
 .hola{
-    display: block;
-    text-align: center;
+    margin: 0 auto; /*Esto para que el div ocupe todo el espacio del header*/
+    vertical-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+.button-hover{
+    height: 44px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    @apply bg-common-black hover:bg-grey-100
+}
+
+.div-padding{
+    padding:0 22px;
+}
+
+.icon1 {
+   font-size: 18px;
+}
+
+.icon2{
+    padding-right: 32px;
+    padding-left: 11px;
+}
+
+.icon3{
+    padding-left: 33px;
+    font-size: 21px;
+}
+
+.logo {
+    vertical-align: center;
+    padding-right: 10px;
 }

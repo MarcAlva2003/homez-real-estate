@@ -5,6 +5,12 @@ import "./layout.style.css"
 import type { Metadata } from "next";
 import { poppins } from "./fonts";
 import { Button } from "@/components/button/button.component";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { FaRegCircleUser } from "react-icons/fa6";
+import Image from "next/image";
+import mainLogo from "../../public/logos/mainLogo.svg"
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,33 +26,55 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <header className='flex items-center'>
-          <nav className='flex items-center hola'>
+          <div className='flex items-center hola'>
             <div className='flex items-center'>
               <div>
-                <p><b>homez</b></p>
+                <image
+                
+                />
               </div>
+                <div className='flex items-center logo'>
+                    <>
+                    <Image
+                      src={mainLogo}
+                      alt="screenchot of logo"
+                      width={138}
+                      height={44}
+                      className="hidden md:block"
+                    />
+                    </>
+                </div>
               <div className='flex items-center'>
-                <p>Home</p>
-                <p>Listings</p>
-                <p>Members</p>
-                <p>Blog</p>
-                <p>Pages</p>
+                <div className="div-padding"><button className="button-hover"><p>Home</p></button></div>
+                <div className="div-padding"><button className="button-hover"><p>Listings</p></button></div>
+                <div className="div-padding"><button className="button-hover"><p>Members</p></button></div>
+                <div className="div-padding"><button className="button-hover"><p>Blog</p></button></div>
+                <div className="div-padding"><button className="button-hover"><p>Pages</p></button></div>
               </div>
             </div>
             <div className='flex items-center'>
-              <div>
-                <p>ícono + login/register</p>
+              <div className="flex items-center"> 
+                <div className="icon1">
+                  <>
+                    <FaRegCircleUser />
+                  </>
+                </div>
+                <div className="icon2">
+                  <p>Login / Register</p>
+                </div>
               </div>
               <div className='flex items-center'>
                 <>
                 <Button size="medium" variant="rounded"  color='black'><p>Add Property</p></Button>
                 </>
               </div>
-              <div>
-                <p>símbolo</p>
+              <div className="icon3">
+                <>
+                  <RxHamburgerMenu />
+                </>
               </div>
             </div>
-          </nav>
+          </div>
         </header>
         
         {children}
