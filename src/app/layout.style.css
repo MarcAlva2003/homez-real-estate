@@ -1,0 +1,18 @@
+header{
+    height: 87px;
+    justify-content: space-between;
+    flex-direction: row;
+    @apply bg-common-black text-common-white
+
+}
+
+/* .contendor-principal{
+    display: grid;
+    place-items: center;
+    margin: auto;
+} */
+
+.hola{
+    display: block;
+    text-align: center;
+}

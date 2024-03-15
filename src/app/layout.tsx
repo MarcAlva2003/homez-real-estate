@@ -1,11 +1,10 @@
 import "./globals.css";
 import "./layout.style.css"
 
-import { Inter } from "next/font/google";
+
 import type { Metadata } from "next";
 import { poppins } from "./fonts";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Button } from "@/components/button/button.component";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,13 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
-        <header>
-          <div>
-            <div>
+        <header className='flex items-center'>
+          <nav className='flex items-center hola'>
+            <div className='flex items-center'>
               <div>
-                <p>logo + homez</p>
+                <p><b>homez</b></p>
               </div>
-              <div>
+              <div className='flex items-center'>
                 <p>Home</p>
                 <p>Listings</p>
                 <p>Members</p>
@@ -34,21 +33,24 @@ export default function RootLayout({
                 <p>Pages</p>
               </div>
             </div>
-            <div>
+            <div className='flex items-center'>
               <div>
                 <p>ícono + login/register</p>
               </div>
-              <div>
-                <p>llamar al componente botón</p>
+              <div className='flex items-center'>
+                <>
+                <Button size="medium" variant="rounded"  color='black'><p>Add Property</p></Button>
+                </>
               </div>
               <div>
                 <p>símbolo</p>
               </div>
             </div>
-          </div>
+          </nav>
         </header>
         
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
