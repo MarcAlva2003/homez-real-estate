@@ -1,0 +1,14 @@
+.color {
+        height: 44px;
+        padding: 0 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        @apply bg-common-black hover:bg-grey-100
+    
+}
+
+.black {
+    @apply bg-common-black hover:bg-grey-100
+}

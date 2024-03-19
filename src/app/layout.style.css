@@ -1,3 +1,7 @@
+html {
+    user-select: none;
+}
+
 header{
     height: 87px;
     text-align: center;
@@ -12,6 +16,7 @@ header{
     font-size: 14px;
 
 }
+
 .button-hover{
     height: 44px;
     padding: 0 25px;
@@ -19,6 +24,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 45px;
+    cursor: default;
     @apply bg-common-black hover:bg-grey-100
 }
 
