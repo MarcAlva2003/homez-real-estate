@@ -1,10 +1,18 @@
 import "./globals.css";
+import "./layout.style.css"
 
-import { Inter } from "next/font/google";
+
 import type { Metadata } from "next";
 import { poppins } from "./fonts";
+import { Button } from "@/components/button/button.component";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { FaRegCircleUser } from "react-icons/fa6";
+import Image from "next/image";
+import mainLogo from "../../public/logos/mainLogo.svg"
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,13 +23,66 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>
+){
+
+  const options = ['Home', 'Listings', 'Members', 'Blog', 'Pages']
+  
+
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialasied`} >
-        header
-        <br></br>
-        {children}</body>
+      <body className={`${poppins.className} antialiased`}>
+        <header className='flex items-center'>
+          <div className='flex items-center hola'>
+            <div className='flex items-center'>
+                <div className='flex items-center logo'>
+                    <>
+                    <Image
+                      src={mainLogo}
+                      alt="screenchot of logo"
+                      width={138}
+                      height={44}
+                      className="hidden md:block"
+                    />
+                    </>
+                </div>
+              <div className='flex items-center'>
+                {options.map((option)=> {
+                  return (
+                    <div className="div-padding">  
+                    <button className="button-hover disables:opacity-50">{option}</button>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+            <div className='flex items-center'>
+              <div className="flex items-center"> 
+                <div className="icon1">
+                  <>
+                    <FaRegCircleUser />
+                  </>
+                </div>
+                <div className="icon2">
+                  <p>Login / Register</p>
+                </div>
+              </div>
+              <div className='flex items-center'>
+                <>
+                <Button size="medium" variant="rounded"  color='black'><p>Add Property</p></Button>
+                </>
+              </div>
+              <div className="icon3">
+                <>
+                  <RxHamburgerMenu />
+                </>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+        {children}
+      </body>
     </html>
   );
 }
