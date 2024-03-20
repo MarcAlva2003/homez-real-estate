@@ -9,6 +9,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegCircleUser } from "react-icons/fa6";
 import Image from "next/image";
 import mainLogo from "../../public/logos/mainLogo.svg"
+import Link from "next/link";
 
 
 
@@ -35,17 +36,20 @@ export default function RootLayout({
         <header className='flex items-center'>
           <div className='flex items-center hola'>
             <div className='flex items-center'>
-                <div className='flex items-center logo'>
-                    <>
-                    <Image
-                      src={mainLogo}
-                      alt="screenchot of logo"
-                      width={138}
-                      height={44}
-                      className="hidden md:block"
-                    />
-                    </>
-                </div>
+                    <div className='flex items-center logo'>
+                        <>
+                        <Link href={'/'}>
+                        <Image
+                          src={mainLogo}
+                          alt="screenchot of logo"
+                          width={138}
+                          height={44}
+                          className="hidden md:block"
+                        />
+                        </Link>
+                        </>
+
+                    </div>
               <div className='flex items-center'>
                 {options.map((option)=> {
                   return (
@@ -57,14 +61,18 @@ export default function RootLayout({
               </div>
             </div>
             <div className='flex items-center'>
-              <div className="flex items-center"> 
-                <div className="icon1">
-                  <>
-                    <FaRegCircleUser />
-                  </>
-                </div>
-                <div className="icon2">
-                  <p>Login / Register</p>
+              <div className="separation">
+                <div className="flex items-center ">
+                  <button className="button-underline">
+                    <div className="icon1">
+                      <>
+                        <FaRegCircleUser />
+                      </>
+                    </div>
+                    <div className="icon2">
+                      Login / Register
+                    </div>
+                  </button>
                 </div>
               </div>
               <div className='flex items-center'>
@@ -73,9 +81,11 @@ export default function RootLayout({
                 </>
               </div>
               <div className="icon3">
-                <>
-                  <RxHamburgerMenu />
-                </>
+                <button className="button-hover">
+                  <>
+                    <RxHamburgerMenu />
+                  </>
+                </button>
               </div>
             </div>
           </div>

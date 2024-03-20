@@ -24,7 +24,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 45px;
-    cursor: default;
+    cursor: pointer;
     @apply bg-common-black hover:bg-grey-100
 }
 
@@ -36,15 +36,30 @@ header{
    font-size: 18px;
 }
 
+.separation {
+    margin-right: 33px;
+}
+
+.button-underline{
+    height: 44px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    cursor: pointer;
+    @apply hover:bg-grey-100 hover:underline
+}
+
 .icon2{
-    padding-right: 32px;
     padding-left: 11px;
 }
 
 .icon3{
-    padding-left: 33px;
     font-size: 21px;
+    margin-left: 10px;
 }
+
 
 .logo {
     vertical-align: center;
