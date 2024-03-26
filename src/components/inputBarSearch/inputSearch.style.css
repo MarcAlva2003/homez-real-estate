@@ -1,0 +1,15 @@
+.formSearch {
+    border-radius: 8px;
+    padding: 14px 0;
+    width: 592px;
+    display: flex;
+    justify-content: center;
+    margin-right: 27px;
+    margin-left: 18px;
+    @apply bg-grey-25
+}
+
+.inputSearch {
+    width: 565px;
+    height: 24px;
+}

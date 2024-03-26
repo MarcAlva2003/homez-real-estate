@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <header className='flex items-center'>
-          <div className='flex items-center hola'>
+          <div className='flex items-center home'>
             <div className='flex items-center'>
                     <div className='flex items-center logo'>
                         <>
