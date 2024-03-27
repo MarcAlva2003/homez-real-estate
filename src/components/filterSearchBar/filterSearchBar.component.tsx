@@ -2,7 +2,8 @@ import './filterSearchBar.style.css'
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoOptionsOutline } from "react-icons/io5";
 import { PiHouseSimple } from "react-icons/pi";
-import { InputSearch } from '../inputBarSearch/inputSearch';
+import { Input } from '../ui/input/input';
+
 
 
 export const Search = () => {
@@ -16,7 +17,9 @@ export const Search = () => {
             <div className='flex items-center searchMenu'>
                 <div>
                     <>
-                        <InputSearch></InputSearch>
+                        <Input indexPosition='default'
+                        iconLeft={<PiHouseSimple className='inputIcon'/>}
+                        />
                     </>
                 </div>
                 <div>

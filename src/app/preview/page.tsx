@@ -1,4 +1,4 @@
-import { Button } from '@/components/button/button.component'
+import { Button } from '@/components/ui/button/button.component'
 import { Search } from '@/components/filterSearchBar/filterSearchBar.component';
 
 
