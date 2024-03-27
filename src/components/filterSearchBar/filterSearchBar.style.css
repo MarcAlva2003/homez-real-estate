@@ -1,0 +1,76 @@
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.optionButtons {
+    justify-content: space-around;
+    height: 55px;
+    width: 261px;
+    border-radius: 12px 12px 0px 0px;
+    @apply bg-common-white border-b border-solid border-grey-55  
+}
+
+.optionText {
+    height: 26;
+    padding: 0px 14.5px;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.optionText:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -17.5px;
+    @apply bg-common-black
+}
+
+.optionText:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.magnifyingGlass {
+    font-size: 18px;
+    height: 54px;
+    padding: 0px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    /* margin-right: 10px; */
+    @apply bg-primary-salmon text-common-white
+}
+
+.searchMenu {
+    height: 94px;
+    width: 840px;
+    border-radius: 0px 12px 12px 12px;
+    @apply bg-common-white
+}
+
+
+
+.icon2 {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.iconText {
+    height: 26px;
+    font-size: 14px;
+    margin-right: 29px;
+    align-content: center;
+}
+
+.inputIcon {
+    font-size: 18px;
+    margin-right: 12px;
+    margin-left: 15px;
+}

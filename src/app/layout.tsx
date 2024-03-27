@@ -4,7 +4,7 @@ import "./layout.style.css"
 
 import type { Metadata } from "next";
 import { poppins } from "./fonts";
-import { Button } from "@/components/button/button.component";
+import { Button } from "@/components/ui/button/button.component";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegCircleUser } from "react-icons/fa6";
 import Image from "next/image";
@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <header className='flex items-center'>
-          <div className='flex items-center hola'>
+          <div className='flex items-center home'>
             <div className='flex items-center'>
                     <div className='flex items-center logo'>
                         <>

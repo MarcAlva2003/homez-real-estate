@@ -1,0 +1,35 @@
+.formSearch {
+    border-radius: 8px;
+    height: 52px;
+    width: 592px;
+    display: flex;
+    justify-content: center;
+    margin-right: 27px;
+    margin-left: 18px;  
+    cursor: text;
+    @apply bg-grey-25 
+}
+
+.iconLeft {
+    width: 565px;
+    height: 52px;
+    cursor: text;
+    font-size: 14px;
+    
+}
+
+
+.iconRight{
+    width: 565px;
+    height: 52px;
+    cursor: text;
+    font-size: 14px;
+
+}
+
+.default {
+    width: 565px;
+    height: 52px;
+    cursor: text;
+    font-size: 14px;
+}
